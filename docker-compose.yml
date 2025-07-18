@@ -1,0 +1,21 @@
+# Version a usar en el docker-compose
+version: '3'
+
+services:
+  db:
+    container_name: mysql-db
+    image: mysql:oraclelinux9
+    environment:
+      - MYSQL_ROOT_PASSWORD=my-secret-pw 
+    ports:
+      - 3306:3306
+  phpmyadmin:
+    container_name: phpmyadmin-t
+    depends_on:
+      - db
+    image: phpmyadmin:apache
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+

@@ -1,15 +1,16 @@
+using DBContext.ApplicationDbContext;
 using MediatR;
 using Models.Input;
 using Models.Output;
+using Repository.IRepository.ITareasRepository;
 
 public class InputCrearTareaBO : IRequestHandler<InputCrearTarea, JsonResponse>
 {
-    // private readonly IDatabaseRepository _databaseRepository;
-    private readonly IMediator _mediator;
+    private readonly ITareasRepository _ITareasRepository;
 
-    public InputCrearTareaBO(IMediator mediator)
+    public InputCrearTareaBO(ITareasRepository ITareasRepository)
     {
-        _mediator = mediator;
+        _ITareasRepository = ITareasRepository;
     }
 
     public async Task<JsonResponse> Handle(InputCrearTarea request, CancellationToken cancellationToken)
@@ -17,7 +18,21 @@ public class InputCrearTareaBO : IRequestHandler<InputCrearTarea, JsonResponse>
 
         var respuesta = new JsonResponse();
 
-        return respuesta;
+
+        var entidad = new Tarea
+        {
+            Titulo = request.Titulo,
+            Descripcion = request.Descripcion
+        };
+
+        var response = await _ITareasRepository.CrearTarea(entidad);
+
+
+        return new JsonResponse
+        {
+            Estado = "OK", // 👈 aquí deberían ir valores reales
+            Descripcion = "Tarea creada exitosamente"
+        };
     }
 
 }

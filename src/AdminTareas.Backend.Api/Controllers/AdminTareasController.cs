@@ -58,11 +58,11 @@ public class AdminTareasController : ControllerBase
 
     }
 
-    [HttpGet]
+    [HttpPost]
     [Route("CrearTarea")]
-    public ActionResult<JsonResponse> CrearTarea(InputCrearTarea request)
+    public async Task<ActionResult<JsonResponse>> CrearTarea(InputCrearTarea request)
     {
-        var response = _mediator.Send(request);
+        var response = await _mediator.Send(request);
         if (response is null)
         {
             return NotFound(new JsonResponse { Estado = "CrearTarea", Descripcion = "Error al realizar petición" });

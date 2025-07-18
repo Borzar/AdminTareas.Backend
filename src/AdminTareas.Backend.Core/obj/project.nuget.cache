@@ -1,21 +1,83 @@
 {
   "version": 2,
-  "dgSpecHash": "+o1x5U1hLn4=",
-  "success": true,
+  "dgSpecHash": "NQZFUhEjzjY=",
+  "success": false,
   "projectFilePath": "C:\\Users\\boris\\Proyectos\\AdminTareas.Backend\\src\\AdminTareas.Backend.Core\\AdminTareas.Backend.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\boris\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\boris\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
     "C:\\Users\\boris\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\boris\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
-    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.codeanalysis.common\\4.8.0\\microsoft.codeanalysis.common.4.8.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.8.0\\microsoft.codeanalysis.csharp.4.8.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\4.8.0\\microsoft.codeanalysis.csharp.workspaces.4.8.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.8.0\\microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.codeanalysis.workspaces.msbuild\\4.8.0\\microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.3\\microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.6\\microsoft.entityframeworkcore.design.9.0.6.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.7\\microsoft.entityframeworkcore.relational.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.6\\microsoft.entityframeworkcore.tools.9.0.6.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.7\\microsoft.extensions.caching.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.7\\microsoft.extensions.caching.memory.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.7\\microsoft.extensions.configuration.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.7\\microsoft.extensions.dependencyinjection.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.7\\microsoft.extensions.dependencyinjection.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.6\\microsoft.extensions.dependencymodel.9.0.6.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.logging\\9.0.7\\microsoft.extensions.logging.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.7\\microsoft.extensions.logging.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.options\\9.0.7\\microsoft.extensions.options.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.7\\microsoft.extensions.primitives.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.3\\pomelo.entityframeworkcore.mysql.8.0.3.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.composition.attributedmodel\\7.0.0\\system.composition.attributedmodel.7.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.composition.convention\\7.0.0\\system.composition.convention.7.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.composition.hosting\\7.0.0\\system.composition.hosting.7.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.composition.runtime\\7.0.0\\system.composition.runtime.7.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.composition.typedparts\\7.0.0\\system.composition.typedparts.7.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.7\\system.diagnostics.diagnosticsource.9.0.7.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.io.pipelines\\9.0.6\\system.io.pipelines.9.0.6.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.text.encodings.web\\9.0.6\\system.text.encodings.web.9.0.6.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.text.json\\9.0.6\\system.text.json.9.0.6.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.5.0 was resolved.",
+      "message": "Se detectó una versión del paquete fuera de la restricción de dependencia: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requiere MediatR (>= 11.0.0 && < 12.0.0), pero la versión MediatR 12.5.0 ya se resolvió.",
       "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Se detectó una versión del paquete fuera de la restricción de dependencia: Pomelo.EntityFrameworkCore.MySql 8.0.3 requiere Microsoft.EntityFrameworkCore.Relational (>= 8.0.13 && <= 8.0.999), pero la versión Microsoft.EntityFrameworkCore.Relational 9.0.7 ya se resolvió.",
+      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Advertencia como error: Degradación del paquete detectada: Microsoft.EntityFrameworkCore de 9.0.7 a 8.0.3. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n AdminTareas.Backend.Core -> Microsoft.EntityFrameworkCore.Relational 9.0.7 -> Microsoft.EntityFrameworkCore (>= 9.0.7) \r\n AdminTareas.Backend.Core -> Microsoft.EntityFrameworkCore (>= 8.0.3)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
       "targetGraphs": [
         "net8.0"
       ]
