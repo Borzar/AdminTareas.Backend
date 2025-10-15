@@ -6,8 +6,8 @@ namespace Repository.IRepository.ITareasRepository;
 
 public interface ITareasRepository
 {
-    public Task<JsonResponseDto > CrearTarea(Tarea input);
-    public JsonResponseDto ConsultarTarea();
-    public JsonResponseDto BorrarTarea();
-    public JsonResponseDto ActualizarTarea();
+    public Task<JsonResponseDto> CrearTarea(Tarea input);
+    public Task<JsonResponseDto> ActualizarTarea(Tarea input);
+    public Task<JsonResponseDto> BorrarTarea(InputBorrarTarea input);
+    public Task<JsonResponseDto> ConsultarTarea(InputConsultarTarea input);
 }

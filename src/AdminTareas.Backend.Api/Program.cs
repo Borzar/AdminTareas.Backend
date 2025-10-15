@@ -13,6 +13,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
 var configuration = new MapperConfiguration(cfg => 
 {
     cfg.CreateMap<InputCrearTarea, InputCrearTareaDto>();
@@ -23,7 +34,7 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Progr
 builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssemblies(
         typeof(Program).Assembly,
-        typeof(InputCrearTareaBO).Assembly
+        typeof(CrearTareaBO).Assembly
     )
 );
 
@@ -40,6 +51,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseCors("AllowAll"); // Usa el nombre de la política que definiste
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

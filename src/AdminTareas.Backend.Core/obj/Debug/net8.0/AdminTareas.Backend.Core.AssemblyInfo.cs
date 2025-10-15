@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdminTareas.Backend.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54da18e09bf09ff409054842f45596aa8c956bcb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+594fedbdd6627d38626029ef99d27a3f12fe2f34")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdminTareas.Backend.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdminTareas.Backend.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

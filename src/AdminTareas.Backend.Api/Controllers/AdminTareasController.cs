@@ -19,45 +19,6 @@ public class AdminTareasController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpGet]
-    [Route("ConsultarTarea")]
-    public ActionResult<JsonResponse> ConsultarTarea(InputCrearTarea request)
-    {
-        var response = _mediator.Send(request);
-        if (response is null)
-        {
-            return NotFound(new JsonResponse { Estado = "ConsultarTarea", Descripcion = "Error al realizar petición" });
-        }
-        return Ok(response);
-
-    }
-
-    [HttpGet]
-    [Route("BorrarTarea")]
-    public ActionResult<JsonResponse> BorrarTarea(InputCrearTarea request)
-    {
-        var response = _mediator.Send(request);
-        if (response is null)
-        {
-            return NotFound(new JsonResponse { Estado = "BorrarTarea", Descripcion = "Error al realizar petición" });
-        }
-        return Ok(response);
-
-    }
-
-    [HttpGet]
-    [Route("ActualizarTarea")]
-    public ActionResult<JsonResponse> ActualizarTarea(InputCrearTarea request)
-    {
-        var response = _mediator.Send(request);
-        if (response is null)
-        {
-            return NotFound(new JsonResponse { Estado = "ActualizarTarea", Descripcion = "Error al realizar petición" });
-        }
-        return Ok(response);
-
-    }
-
     [HttpPost]
     [Route("CrearTarea")]
     public async Task<ActionResult<JsonResponse>> CrearTarea(InputCrearTarea request)
@@ -65,10 +26,48 @@ public class AdminTareasController : ControllerBase
         var response = await _mediator.Send(request);
         if (response is null)
         {
-            return NotFound(new JsonResponse { Estado = "CrearTarea", Descripcion = "Error al realizar petición" });
+            return NotFound(new JsonResponse { Estado = "Error", Descripcion = "Error al realizar petición" });
         }
         return Ok(response);
 
     }
 
+    [HttpPatch]
+    [Route("ActualizarTarea")]
+    public async Task<ActionResult<JsonResponse>> ActualizarTarea(InputActualizarTarea request)
+    {
+        var response = await _mediator.Send(request);
+        if (response is null)
+        {
+            return NotFound(new JsonResponse { Estado = "Error", Descripcion = "Error al realizar petición" });
+        }
+        return Ok(response);
+
+    }
+
+    [HttpDelete]
+    [Route("BorrarTarea")]
+    public async Task<ActionResult<JsonResponse>> BorrarTarea(InputBorrarTarea request)
+    {
+        var response = await _mediator.Send(request);
+        if (response is null)
+        {
+            return NotFound(new JsonResponse { Estado = "Error", Descripcion = "Error al realizar petición" });
+        }
+        return Ok(response);
+
+    }
+
+    [HttpPost]
+    [Route("ConsultarTarea")]
+    public async Task<ActionResult<JsonResponse>> ConsultarTarea(InputConsultarTarea request)
+    {
+        var response = await _mediator.Send(request);
+        if (response is null)
+        {
+            return NotFound(new JsonResponse { Estado = "Error", Descripcion = "Error al realizar petición" });
+        }
+        return Ok(response);
+
+    }
 }

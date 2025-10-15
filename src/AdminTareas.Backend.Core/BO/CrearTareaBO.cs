@@ -4,11 +4,11 @@ using Models.Input;
 using Models.Output;
 using Repository.IRepository.ITareasRepository;
 
-public class InputCrearTareaBO : IRequestHandler<InputCrearTarea, JsonResponse>
+public class CrearTareaBO : IRequestHandler<InputCrearTarea, JsonResponse>
 {
     private readonly ITareasRepository _ITareasRepository;
 
-    public InputCrearTareaBO(ITareasRepository ITareasRepository)
+    public CrearTareaBO(ITareasRepository ITareasRepository)
     {
         _ITareasRepository = ITareasRepository;
     }
@@ -16,23 +16,22 @@ public class InputCrearTareaBO : IRequestHandler<InputCrearTarea, JsonResponse>
     public async Task<JsonResponse> Handle(InputCrearTarea request, CancellationToken cancellationToken)
     {
 
-        var respuesta = new JsonResponse();
-
-
-        var entidad = new Tarea
+        var inputTarea = new Tarea
         {
             Titulo = request.Titulo,
             Descripcion = request.Descripcion
         };
 
-        var response = await _ITareasRepository.CrearTarea(entidad);
+        var resultDto = await _ITareasRepository.CrearTarea(inputTarea);
 
-
-        return new JsonResponse
+        var result = new JsonResponse
         {
-            Estado = "OK", // 👈 aquí deberían ir valores reales
-            Descripcion = "Tarea creada exitosamente"
+            Estado = resultDto.EstadoDto,
+            Descripcion = resultDto.DescripcionDto
         };
+
+        return result;
+       
     }
 
 }
